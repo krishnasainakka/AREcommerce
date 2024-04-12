@@ -1,0 +1,199 @@
+/* Container styling */
+.cart-container {
+    width: 90%;
+    max-width: 1200px; /* Set a maximum width */
+    margin: 20px auto; /* Center the container */
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Shopping cart heading styling */
+.cart-heading {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333; /* Change heading color */
+}
+
+/* Empty cart message styling */
+.empty-cart {
+    text-align: center;
+}
+
+.empty-cart p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Shop button styling */
+.shop-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue color for shop button */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
+
+.shop-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+/* Cart items container */
+.cart-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Add spacing between items */
+}
+
+/* Individual cart item styling */
+.cart-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Product image styling */
+.cart-item-img {
+    height: 200px; /* Set a fixed height for consistency */
+    overflow: hidden; /* Hide overflowing parts */
+}
+
+.cart-item-img model-viewer {
+    width: 100%;
+    height: 100%;
+}
+
+/* Quantity box styling */
+.qty-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.qty-btn {
+    padding: 5px 8px; /* Adjusted padding */
+    background-color: rgb(8, 144, 8); /* Changed button color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 14px; 
+}
+
+.qty-btn:hover {
+    background-color: green; 
+}
+
+.qty {
+    margin: 0 10px;
+}
+
+/* Delete button styling */
+.cart-item-details .delete-btn {
+    background-color: #dc3545; 
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
+
+.cart-item-details .delete-btn:hover {
+    background-color: #c82333; /* Darker shade on hover */
+}
+
+/* See more like this button styling */
+.cart-item-details .see-more-btn {
+    background-color: #ffc107; 
+    color: #000;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.cart-item-details .see-more-btn:hover {
+    background-color: #e0a800; /* Darker shade on hover */
+}
+
+/* Share button styling */
+.cart-item-details .share-btn {
+    background-color: #007bff; /* Blue color for Share button */
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
+
+.cart-item-details .share-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Limited time deal styling */
+.time-deal {
+    color: red;
+    font-size: 0.8em;
+}
+
+/* Discount percentage styling */
+.off-perct {
+    display: inline-block;
+    background-color: red;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 0.8em;
+}
+
+/* Original price styling */
+#org-price {
+    text-decoration: line-through;
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* Subtotal container styling */
+.sub-total {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.sub-total h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.sub-total b {
+    color: #333;
+}
+
+/*Checkout styling*/
+.checkout{
+    background-color: #dc3545; 
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}

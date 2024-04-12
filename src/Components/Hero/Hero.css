@@ -1,0 +1,64 @@
+Hero.css
+
+.hero-carousel-container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.full-width-carousel {
+  width: 100% !important; /* Set width to 100% */
+}
+
+.hero-container {
+  height: 87.5vh;
+  width: 100%;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 80px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.heading {
+  font-size: 5rem;
+  line-height: 1;
+}
+
+.paragraph {
+  margin-top: 20px;
+}
+
+.button-container {
+  margin-top: 30px;
+}
+
+/* @media screen and (max-width: 767px) {
+  .hero-content {
+    margin-left: 5%; 
+  }
+
+  .heading {
+    font-size: 2rem; 
+  }
+} */
+
+@media screen and (max-width: 800px) {
+  .hero-carousel-container {
+    display: none; /* Hide the hero section */
+  }
+}
