@@ -10,7 +10,8 @@ import cors from 'cors';
 import productRoute from './routes/product.js';
 import Cartitems from './routes/Cart.js'
 import  UserRouter from "./routes/User.js";
-import stripe from './routes/stripe.js'
+import stripe from './routes/stripe.js';
+import path from 'path';
 
 dotenv.config(); 
 const app = express();
@@ -31,10 +32,16 @@ app.use('/cart', Cartitems);
 app.use('/user', UserRouter);
 app.use('/stripe', stripe);
 app.use('/api/v1/dalle', dalleRoutes);
+app.use(express.static(path.join(__dirname, '/frontend/dist')));
 
-app.get('/', (req, res) => {
-  res.status(200).json({ message: "Hello from DALL.E" });
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'frontend', 'dist', 'index.html'));
 });
+
+
+// app.get('/', (req, res) => {
+//   res.status(200).json({ message: "Hello from DALL.E" });
+// });
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
