@@ -253,7 +253,7 @@ import {
 import './Admin.css';
 
 const Admin = () => {
-  const Url = "http://localhost:10000";
+  const Url = "https://arecommerce.onrender.com";
   const [productName, setProductName] = useState('');
   const [price, setPrice] = useState('');
   const [description, setDescription] = useState('');

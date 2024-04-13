@@ -14,7 +14,7 @@ const Shop = () => {
   const [category, setCategory] = useState([]);
   const [loading, setLoading] = useState(true);
   const [productsAvailable, setProductsAvailable] = useState(true);
-  const host = "http://localhost:10000";
+  const host = "https://arecommerce.onrender.com";
   const [sortBy, setSortBy] = useState('normal');
   const [selectedType, setSelectedType] = useState('');    
   const [showFilters, setShowFilters] = useState(false); // State to track whether filters are shown

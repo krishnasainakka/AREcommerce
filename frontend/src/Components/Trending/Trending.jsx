@@ -289,7 +289,7 @@ const ProductCard = ({ product }) => {
 
 
 const Trending = () => {  
-  const host = `http://localhost:10000`;
+  const host = `https://arecommerce.onrender.com`;
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [trendingProducts, setTrendingProducts] = useState({

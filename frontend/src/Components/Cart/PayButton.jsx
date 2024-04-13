@@ -5,7 +5,7 @@ import axios from "axios";
 import {useSelector} from 'react-redux';
 
 const PayButton = ({cartItems}) => {
-  const host = "http://localhost:10000";
+  const host = "https://arecommerce.onrender.com";
   const { isSignedIn, user } = useUser();
 
     const handleCheckout = async () => {

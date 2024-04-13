@@ -12,7 +12,7 @@ const Cart = () => {
     const [qty, setQty] = useState({});
     const location = useLocation();
     const u_id = location.pathname.split("/")[2];
-    const host = "http://localhost:10000";
+    const host = "https://arecommerce.onrender.com";
 
     useEffect(() => {
         const getCartItems = async () => {
