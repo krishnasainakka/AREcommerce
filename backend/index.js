@@ -29,7 +29,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Other routes
 app.use('/auth', authRoute);
 app.use('/product', productRoute);
-app.use('/cart', Cartitems);
+app.use('/carts', Cartitems);
 app.use('/user', UserRouter);
 app.use('/stripe', stripe);
 app.use('/api/v1/dalle', dalleRoutes);

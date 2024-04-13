@@ -17,7 +17,7 @@ const Cart = () => {
     useEffect(() => {
         const getCartItems = async () => {
             try {
-                const response = await fetch(`${host}/cart/${u_id}`, {
+                const response = await fetch(`${host}/carts/${u_id}`, {
                     method: "GET",
                 });
                 if (response.ok) {
@@ -59,7 +59,7 @@ const Cart = () => {
 
     const handleDelete = async (pid) => {
         try {
-            const response = await fetch(`${host}/cart/${pid}/${u_id}`, {
+            const response = await fetch(`${host}/carts/${pid}/${u_id}`, {
                 method: "DELETE", 
             });
             window.location.reload();

@@ -71,7 +71,7 @@ const SingleProduct = () => {
                 ProductBrand: activeData.ProductBrand,
               };
               console.log(newItem)
-              const res = await fetch(`${host}/cart/product/${user.id}`, {
+              const res = await fetch(`${host}/carts/product/${user.id}`, {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",
