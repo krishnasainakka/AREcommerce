@@ -14,6 +14,7 @@ import stripe from './routes/stripe.js';
 import path from 'path';
 
 dotenv.config(); 
+const __dirname = path.resolve();
 const app = express();
 const port = process.env.PORT || 5000;
 
