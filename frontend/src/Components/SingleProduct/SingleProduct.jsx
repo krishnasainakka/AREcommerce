@@ -19,7 +19,7 @@ const SingleProduct = () => {
     const [qty, setQty] = useState(1);
     const [activeProduct, setActiveProduct] = useState(null);
     const [CategoryData, setCategoryData] = useState([]);
-    const host = "http://localhost:8000";    
+    const host = "http://localhost:10000";    
     // const { addToCart } = useCart();
 
     const getSingleProduct = async () => {

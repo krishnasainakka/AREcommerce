@@ -12,7 +12,7 @@ const Cart = () => {
     const [qty, setQty] = useState({});
     const location = useLocation();
     const u_id = location.pathname.split("/")[2];
-    const host = "http://localhost:8000";
+    const host = "http://localhost:10000";
 
     useEffect(() => {
         const getCartItems = async () => {

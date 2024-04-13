@@ -44,6 +44,8 @@
         }
     });
 
+    // router.get('/category/:Category', getCat);
+
     //Get a product by ProductType
     router.get('/productType/:ProdType', async (req, res) => {
         console.log(req.params.ProdType);

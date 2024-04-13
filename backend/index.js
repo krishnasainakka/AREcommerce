@@ -16,15 +16,20 @@ import path from 'path';
 dotenv.config(); 
 const __dirname = path.resolve();
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT;
 
 connectToMongo();
+
 app.use(cors());
 
 // bodyParser middleware should be registered after multer
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(express.json());
 
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
+});
 
 // Other routes
 app.use('/auth', authRoute);
@@ -40,10 +45,9 @@ app.get('*', (req, res) => {
 });
 
 
+
 // app.get('/', (req, res) => {
 //   res.status(200).json({ message: "Hello from DALL.E" });
 // });
 
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
-});
+

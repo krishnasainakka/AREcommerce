@@ -5,7 +5,7 @@ import axios from "axios";
 import {useSelector} from 'react-redux';
 
 const PayButton = ({cartItems}) => {
-  const host = "http://localhost:8000";
+  const host = "http://localhost:10000";
   const { isSignedIn, user } = useUser();
 
     const handleCheckout = async () => {
